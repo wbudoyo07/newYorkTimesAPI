@@ -2,27 +2,32 @@
 <html>
 <head>
  <meta charset="utf-8" />
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
  <title>Newyork times Search</title>
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" type="text/css"  href="main.css" />
- <script src="main.js"></script>
+ 
+ <!-- <link rel="stylesheet" type="text/css"  href="assets/css/reset.css" /> -->
+ <link rel="stylesheet" type="text/css"  href="assets/css/main.css" />
+
 </head>
 
 <body>
 
-
+    <!--main container of the page  -->
  <div id="container">
 
+    <!-- titles  or header  -->
    <h1> New York Times Search</h1>
 
    <!-- Here prepare search forms -->
    <div id = "container-2" >
-
+    
      <h2> Search Parameter</h2>
+
+    <!-- search box -->
      <p> Search Term</p>
      <input type="text" name="Search Term" value="">
      
+     <!--  -->
      <p> Number of Records to Retrieve</p>
      <div class="dropdown">
        <form>
@@ -33,12 +38,15 @@
        </form>
      </div>
 
+     <!--  search button and clear button -->
      <button type="submit" value="Search"> Search</button>
      <button type="submit" value="Clear"> Clear Result</button>
 
     
 
    </div>
+   
+   <!--  container 3 will be the results of articles -->
    <div id ="container-3">
         <h3> Top Articles</h3>
       </div>
