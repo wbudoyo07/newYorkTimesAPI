@@ -14,8 +14,18 @@ $.ajax({
  url: url,
  method: 'GET',
 }).done(function(result) {
+    // set jquery text into the element
+     $("#container-3").text(result.response.docs[0].headline.main); 
+  
+  
+    console.log(result.response.docs[0].headline.main);
+// console.log(response.docs[0].headline.main);
 
- console.log(result);
+
+    // if theres an error
 }).fail(function(err) {
- throw err;
+    // do stuff bc we made a mistake
+    console.log(err)
+    console.log('error!')
+    throw err;
 });
